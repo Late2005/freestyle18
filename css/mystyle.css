@@ -1,0 +1,447 @@
+/* General */
+
+* {font-family: Roboto, Arial, Verdana, sans-serif;
+}
+
+html {box-sizing: border-box;
+}
+
+body {width: 100%;
+      min-height: 100vh;
+      padding: 0%;
+      margin: 0%;
+}
+
+header {position: sticky;
+        top: 0%;
+        z-index: 100;
+        box-shadow: 0vh 0.5vw 0.5vw #00000088;
+}
+
+a {text-decoration: none;
+  font-weight: bold;
+}
+
+img {display: inline-block;
+}
+
+footer {padding: 2vw 2vw 4vw 2vw;
+}
+
+/* Mobile first */
+
+@media only screen and (max-width: 600px) {
+
+header {background-color: #AAAA00;
+}
+
+#logo {width: 250px;
+        height: auto;
+}
+
+header h1 {display: none;
+}
+
+h2 {width: 100%;
+    margin: 0%;
+}
+
+h3 {width: 100%;
+    margin: 0%;
+}
+
+#primary {display: none;
+}
+
+#secundary {display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+            align-content: center;
+}
+
+#secundary a {width: 100%;
+              padding: 1vw 0vw;
+              background-color: #00AAAA;
+              font-size: 4vw;
+              color: #FFFFF0;
+              text-align: center;
+}
+
+#secundary a:hover {background-color: #FFFFF0;
+                    color: #00AAAA;
+}
+
+#headline {display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+}
+
+#headline article {display: inline-flex;
+                  flex-direction: column;
+                  justify-content: center;
+}
+
+#headline article img {max-width: 100vmin;
+
+}
+
+#promo {display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+}
+
+#main {display: none;
+}
+
+#right {display: none;
+}
+
+footer {background-color: #0088AA;
+}
+
+}
+
+/* Large mobiles & small tablets */
+
+@media only screen and (min-width: 600px) {
+
+  header {background-color: #00AAAA;
+  }
+
+  #logo {width: 350px;
+          height: auto;
+  }
+
+  header h1 {display: none;
+  }
+
+  h2 {width: 100%;
+      margin: 0%;
+  }
+
+  h3 {width: 100%;
+      margin: 0%;
+  }
+
+  #wrapper {display: flex;
+            flex-direction: column;
+  }
+
+  #primary {display: none;
+  }
+
+  #secundary {display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              align-items: stretch;
+  }
+
+  #secundary a {width: 100%;
+                padding: 1vw 0vw;
+                background-color: #AAAA00;
+                font-size: 4vw;
+                color: #FFFFF0;
+                text-align: center;
+  }
+
+  #secundary a:hover {background-color: #FFFFF0;
+                      color: #AAAA00;
+  }
+
+  #headline {display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+  }
+
+  #headline article {display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+  }
+
+  #headline article img {width: 100%;
+  }
+
+  #left {display: inline-flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          align-content: center;
+  }
+
+  #main {display: none;
+  }
+
+  #promo {display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          width: 100%;
+          height: auto;
+          background-color: #AAAAAA;
+  }
+
+  footer {background-color: #AAAA00;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  header {display: flex;
+          flex-direction: column;
+          background-color: #00AAAA;
+  }
+
+  #header {display: inline-flex;
+          justify-content:space-between;
+          align-items: center;
+  }
+
+  #logo { width: 300px;
+          height: auto;
+          padding: 2vmin 2vmin;
+  }
+
+  header h1 {display: inline-block;
+            margin: 0%;
+            margin-right: 5vmin;
+            padding: 2vmin 2vmin;
+            font-size: 5vmin;
+            font-weight: bold;
+  }
+
+  h2 {display: block;
+      width: 100%;
+      margin: 0%;
+  }
+
+  h3 {width: 100%;
+      margin: 0%;
+  }
+
+  #primary {display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+  }
+
+  #secundary {display: none;
+  }
+
+  #primary a {padding: 0.75vmin 1.5vmin;
+        margin: 0vmin 0.75vmin;
+        background-color: #AAAA00;
+        font-size: 1.75vmin;
+        color: #FFFFF0;
+        text-align: center;
+  }
+
+  #primary a:hover {background-color: #FFFFF0;
+              color: #AAAA00;
+  }
+
+  #wrapper {display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            max-width: 100%;
+  }
+
+  #headline article {display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+  }
+
+  #headline article img {width: 100%;
+  }
+
+  #left {display: inline-flex;
+          width: 25%;
+          min-width: 300px;
+          padding: 1vmin;
+          flex-direction: column;
+          align-items: flex-start;
+  }
+
+  #main {display: inline-flex;
+        width: 65%;
+        padding: 1vmin;
+        flex-wrap: wrap;
+  }
+
+  .main {display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+  }
+
+  .main div {display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+  }
+
+  .main p {display: inline-block;
+            width: 40%;
+            min-width: 220px;
+            margin: 0%;
+            padding: 0.5vw;
+}
+
+#promo {display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 15vw;
+        min-width: 250px;
+        height: auto;
+        background-color: #AAAAAA;
+}
+
+.left {display: block;
+        position: fixed;
+        bottom: 10%;
+}
+
+#p2 {display: none;
+}
+
+#p3 {display: none;
+}
+
+  footer {background-color: #AAAA00;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header {display: flex;
+          flex-direction: column;
+          background-color: #00AAAA;
+  }
+
+  #header {display: inline-flex;
+          justify-content:space-between;
+          align-items: center;
+  }
+
+  #logo { width: 400px;
+          height: auto;
+          padding: 2vmin 2vmin;
+  }
+
+  header h1 {display: inline-block;
+            margin: 0%;
+            margin-right: 5vmin;
+            padding: 2vmin 2vmin;
+            font-size: 6vmin;
+            font-weight: bold;
+  }
+
+  h2 {display: block;
+      width: 100%;
+      margin: 0%;
+  }
+
+  h3 {width: 100%;
+      margin: 0%;
+  }
+
+  #primary {display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+  }
+
+  #secundary {display: none;
+  }
+
+  #primary a {padding: 1vmin 2vmin;
+        margin: 0vmin 1vmin;
+        background-color: #AAAA00;
+        font-size: 2vmin;
+        color: #FFFFF0;
+        text-align: center;
+  }
+
+  #primary a:hover {background-color: #FFFFF0;
+              color: #AAAA00;
+  }
+
+  #wrapper {display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            max-width: 100%;
+  }
+
+  #headline article {display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+  }
+
+  #headline article img {width: 100%;
+  }
+
+  #left {display: inline-flex;
+          width: 25%;
+          min-width: 350px;
+          padding: 1vmin;
+          flex-direction: column;
+          align-items: flex-start;
+  }
+
+  #main {display: inline-flex;
+        width: 65%;
+        padding: 1vmin;
+        flex-wrap: wrap;
+  }
+
+  .main {display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+  }
+
+  .main div {display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+  }
+
+  .main p {display: inline-block;
+            width: 40%;
+            min-width: 220px;
+            margin: 0%;
+            padding: 0.5vw;
+}
+
+  #promo {display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+          width: 15vw;
+          min-width: 250px;
+          height: auto;
+          background-color: #AAAAAA;
+  }
+
+  .right {display: block;
+          position: fixed;
+          right: 0%;
+          bottom: 10%;
+  }
+
+  #p2 {display: none;
+  }
+
+  #p3 {display: none;
+  }
+
+  footer {background-color: #AAAA00;
+}
+
+}
